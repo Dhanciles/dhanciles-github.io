@@ -96,7 +96,7 @@ button {
 }
 
 .head-shot {
-  background-image: url("images/img_0184.jpg");
+  background-image: url("./images/img_0184.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
