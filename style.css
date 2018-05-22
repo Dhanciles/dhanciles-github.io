@@ -1,0 +1,137 @@
+
+
+body {
+  display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(16.7rem, auto);
+    grid-template-areas: 
+      "bio bio profile head-shot head-shot"
+      "experience education blog head-shot head-shot"
+      "social-menu contact portfolio head-shot head-shot";
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #3DBB7C;
+  border: #FFFFFF, solid;
+  color: #FFFFFF; 
+  display: inline-block;
+  font-size: 1rem; 
+  text-align: center; 
+}
+
+.bio {
+  background-color: #3DBB7C;
+  color: #FFFFFF;
+  display: flex;
+  grid-area: bio;
+}
+
+.bio-content {
+  color: #FFFFFF;
+
+}
+
+.profile {
+  background-color: #FD9D27;
+  color: #FFFFFF;
+  display: flex;
+  grid-area: profile;
+
+}
+
+.experience {
+  background-color: #278CC2;
+  color: #FFFFFF;
+  display: flex;
+  grid-area: experience;
+
+}
+
+.education {
+  background-color: #EF5B4E;
+  color: #FFFFFF;
+  display: flex;
+  grid-area: education;
+
+}
+
+.blog {
+  background-color: #3DBB7C;
+  color: #FFFFFF;
+  display: flex;
+  grid-area: blog;
+
+}
+
+.social-menu {
+  background-color: #F66932;
+  color: #FFFFFF;
+  display: flex;
+  grid-area: social-menu;
+
+}
+
+.contact { 
+  background-color: #278CC2;
+  color: #FFFFFF;
+  display: flex;
+  grid-area: contact;
+
+}
+
+.portfolio {
+  background-color: #F66932;
+  color: #FFFFFF;
+  display: flex;
+  grid-area: portfolio;
+
+}
+
+.head-shot {
+  background-image: url("images/img_0184.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  grid-area: head-shot;
+ }
+
+ 
+ .carousel-buttons {
+  display: flex;
+ }
+
+ .icons {
+  height: 3rem;
+  width: 3rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  grid-template-columns: repeat(5, 1fr)
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 768px) {
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 320px) {
+  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: auto;
+}
+
+
+
+
+
+
